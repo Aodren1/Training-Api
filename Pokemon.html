@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="navbar.css" />
+    
     <title>PokeTrain</title>
 </head>
+
 <body>
-    <div>
-        <div>
-            <img id="img" src="" alt="">
+    <nav class="navbar">
+     <div id="trapezoid">
+        <div class="subnav"></div>
+            <a href="Pokemon.html">Générateur de pokemon</a>
+            <a href="maTeam.php">Ma team</a>
         </div>
-        <div>
-            <div id="nb"></div>
-            <div id="name"></div>
-        </div>
-        <div><button id="btn">Get a new Pokemon</button></div>
-    </div>
+     </div>
+    </nav>
+      
+          <div id="wrapper">
+              <div id="img-wrapper">
+                  <img id="img" src="" alt="">
+              </div>
+              <div>
+                  <div id="nb"></div>
+                  <div id="name"></div>
+              </div>
+              <div><button id="btn">Générer un nouveau pokémon</button></div>
+          </div>
     <script src="./app.js"></script>
+    <script src="./navbar.js"></script>
 </body>
 </html>

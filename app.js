@@ -4,7 +4,7 @@ let number = document.getElementById("nb");
 let namePoke = document.getElementById("name");
 
 const newPokemon = async () => {   
-    let rand = Math.ceil(Math.random() * 150) + 1; // on veut ici un rand des id des pokémons de la 1ere génération 
+    let rand = Math.ceil(Math.random() * 648) + 1; // on veut ici un rand des id des pokémons de la 5eme génération 
 
     let requestString = `https://pokeapi.co/api/v2/pokemon/${rand}`; 
 
@@ -20,4 +20,4 @@ const newPokemon = async () => {
 }
 
 newPokemon(); //init du 1er pokemon
-button.addEventListener("click", newPokemon);
+button.addEventListener("click", newPokemon); 
